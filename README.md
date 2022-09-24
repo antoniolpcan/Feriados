@@ -1,6 +1,6 @@
 # Feriados
 
-Projeto para desenvolvimento web 2 da Fatec.
+Projeto para Desenvolvimento Web 3 da Fatec.
 
 #### Start:
 ```cmd
