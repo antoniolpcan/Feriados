@@ -36,5 +36,5 @@ class FeriadoModelTest(TestCase):
     
     def test_nome_feriado(self):
         nome = self.cadastro.__dict__.get('nome', '')
-        self.assertEqual(nome, self.nome)
+        self.assertEqual(nome, self.feriado)
     
