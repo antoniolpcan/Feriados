@@ -19,7 +19,7 @@ class NatalTest(TestCase):
 class FeriadoModelTest(TestCase):
     def setUp(self):
         hoje = datetime.today()
-        feriado = FeriadoModel(nome = "Páscoa", dia=hoje.day, mes = hoje.month)
+        feriado = FeriadoModel(nome = "teste", dia=hoje.day, mes = hoje.month)
         feriado.save()
         self.resp = self.client.get('/')
 
@@ -30,16 +30,16 @@ class FeriadoModelTest(TestCase):
         self.assertTrue(FeriadoModel.objects.exists())
     
     def test_texto(self):
-        self.assertContains(self.resp, 'Natal')
+        self.assertContains(self.resp, 'teste')
 
     def test_template_natal(self):
         self.assertTemplateUsed(self.resp, 'feriado.html')
 
 class FeiadoModelTest(TestCase):
     def setUp(self):
-        self.feriado = 'Natal'
-        self.mes = 12
-        self.dia = 25
+        self.feriado = 'teste'
+        self.mes = 10
+        self.dia = 4
         self.cadastro = FeriadoModel(
             nome = self.feriado,
             dia = self.dia,
