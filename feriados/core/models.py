@@ -9,4 +9,4 @@ class FeriadoModel(models.Model):
                                         auto_now=True)
 
     def __str__(self):
-        return self.nome
+        return self.nome + '=> ' + str(self.dia)

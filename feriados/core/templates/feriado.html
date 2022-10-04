@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html lang="pt_br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Feriado</title>
+    </head>
+
+    <body style="text-align:center">
+        {% if feriado %}
+         <h1>Hoje é</h1>
+            {{ nome }}
+        {% else %}
+        <h1>Hoje não é feriado.</h1>
+        {% endif %}
+    </body>
+    
+</html>
