@@ -3,4 +3,5 @@ from . import views
 
 urlpatterns = [
     path('', views.verifica_feriado),
+    path('cadastro', views.cadastrar),
 ]
